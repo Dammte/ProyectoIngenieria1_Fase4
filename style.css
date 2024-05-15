@@ -1,30 +1,25 @@
-/* Estilos de reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos generales del cuerpo */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
 
-/* Contenedor principal */
 .container {
     width: 80%;
     margin: 0 auto;
 }
 
-/* Estilos del encabezado */
 header {
     background-color: #333;
     color: #fff;
     padding: 5px 0;
 }
 
-/* Contenido del encabezado */
 .header-content {
     font-family: "Lato", sans-serif;
     display: flex;
@@ -32,53 +27,44 @@ header {
     align-items: center;
 }
 
-/* Estilos del logotipo */
 .logo {
     display: flex;
     align-items: center;
 }
 
-/* Estilos del texto del logotipo */
 .logo h1 {
     margin-left: 10px;
     font-size: 24px;
 }
 
-/* Estilos de la imagen del logotipo */
 .logo-img {
     max-width: 50px;
     border-radius: 40px;
     height: auto;
 }
 
-/* Estilos de la navegación */
 nav ul {
     list-style: none;
     display: flex;
 }
 
-/* Estilos de los elementos de la navegación */
 nav ul li {
     margin-right: 20px;
 }
 
-/* Estilos de los enlaces de la navegación */
 nav ul li a {
     text-decoration: none;
     color: #fff;
 }
 
-/* Estilos generales de las secciones */
 section {
     padding: 50px 0;
 }
 
-/* Estilos del título de las secciones */
 section h2 {
     margin-bottom: 20px;
 }
 
-/* Estilos de los botones */
 .btn {
     display: inline-block;
     background-color: #333;
@@ -88,12 +74,10 @@ section h2 {
     border-radius: 5px;
 }
 
-/* Estilos de las habitaciones */
 .room {
     margin-bottom: 30px;
 }
 
-/* Estilos de las imágenes de las habitaciones */
 .room img {
     max-width: 100%;
     border-radius: 5px;
@@ -170,16 +154,13 @@ section h2 {
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    /* Añadimos espacio desde el contenido anterior */
 }
 
 .search-box input[type="text"],
 .search-box input[type="date"],
 .search-box input[type="number"] {
     width: 250px;
-    /* Aumenta el ancho de los inputs para que no se vean tan apretados */
     padding: 12px;
-    /* Aumenta el espacio interno */
     margin-right: 20px;
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -191,49 +172,48 @@ section h2 {
 .room-section {
     padding: 20px 0;
     text-align: center;
-    position: relative; /* Añadimos posición relativa para el contenedor */
+    position: relative;
 }
 
 .room-carousel {
     display: flex;
-    overflow-x: hidden; /* Ocultamos el desplazamiento horizontal */
-    position: relative; /* Añadimos posición relativa */
+    overflow-x: hidden;
+    position: relative;
 }
 
-/* Estilos de los cards */
 .room-card {
     flex: 0 0 calc(33.33% - 15px);
     margin-right: 20px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease; /* Agregamos una transición para suavizar los cambios */
+    transition: transform 0.3s ease;
 }
 
 .room-card:hover {
-    transform: translateY(-5px); /* Levantamos un poco el card al pasar el ratón */
+    transform: translateY(-5px);
 }
 
 .room-card img {
     width: 100%;
-    height: 200px; /* Establecemos una altura fija para las imágenes */
-    object-fit: cover; /* Hacemos que las imágenes se ajusten al tamaño del contenedor */
-    border-radius: 10px 10px 0 0; /* Añadimos bordes redondeados solo arriba */
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
 }
 
 .room-details {
     padding: 20px;
     background-color: #fff;
-    border-radius: 0 0 10px 10px; /* Añadimos bordes redondeados solo abajo */
+    border-radius: 0 0 10px 10px;
 }
 
 .room-details h3 {
     margin-bottom: 10px;
-    color: #333; /* Cambiamos el color del título */
+    color: #333;
 }
 
 .room-details p {
-    color: #666; /* Cambiamos el color del texto */
+    color: #666;
 }
 
 .btn-room {
@@ -252,12 +232,12 @@ section h2 {
 
 
 .carousel-navigation {
-    position: absolute; /* Añadimos posición absoluta */
-    top: 50%; /* Alineamos verticalmente al centro */
-    transform: translateY(-50%); /* Alineamos verticalmente al centro */
-    width: 100%; /* Para que los botones ocupen todo el ancho del contenedor */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
     display: flex;
-    justify-content: space-between; /* Espaciado uniforme entre los botones */
+    justify-content: space-between;
 }
 
 .prev-btn,
@@ -266,7 +246,7 @@ section h2 {
     color: #fff;
     border: none;
     padding: 10px 15px;
-    border-radius: 50%; /* Hacemos los botones redondos */
+    border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: 20px;
@@ -278,13 +258,132 @@ section h2 {
 }
 
 .prev-btn {
-    left: 10px; /* Alineamos el botón izquierdo */
+    left: 10px;
 }
 
 .next-btn {
-    right: 10px; /* Alineamos el botón derecho */
+    right: 10px;
 }
 
+.contact-section {
+    background-color: #f2f2f2;
+    padding: 20px 0;
+}
+
+.contact-section h2 {
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center; /* Añadido para centrar el título */
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-card {
+    text-align: center;
+    flex: 1 1 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card i {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-card p {
+    color: #666;
+}
+
+.contact-form {
+    margin-top: 30px; /* Ajuste para reducir el espacio superior */
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: calc(100% - 30px);
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    outline: none;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    background-color: #e6e6e6;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+#scrollBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+#scrollBtn:hover {
+    background-color: #555;
+}
+
+.scrollBtnAppear {
+    opacity: 1;
+    transform: translateY(0); 
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 
 
@@ -294,7 +393,5 @@ footer {
     text-align: center;
     padding: 20px 0;
     position: relative;
-    /* Agregamos posición relativa para el contenedor */
     z-index: 2;
-    /* Elevamos el pie de página */
 }
