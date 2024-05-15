@@ -98,32 +98,41 @@ section h2 {
     border-radius: 5px;
 }
 
-/* Estilos de la sección de inicio */
+/* Estilos adicionales para la sección de inicio */
 .home-section {
-    background-image: url('ruta_de_la_imagen.jpg');
+    background-image: url('./img/fondo2.jpg'); /* Corregido la ruta de la imagen */
     background-size: cover;
     background-position: center;
     color: #fff;
     text-align: center;
     padding: 100px 0;
+    position: relative; /* Agregamos posición relativa para el contenedor */
 }
 
-/* Estilos del contenido de la sección de inicio */
 .home-content {
     max-width: 600px;
     margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
+
 
 /* Estilos del título de la sección de inicio */
 .home-content h2 {
     font-size: 36px;
     margin-bottom: 20px;
+    color: #fff; /* Cambiamos el color del texto */
 }
 
 /* Estilos del párrafo de la sección de inicio */
 .home-content p {
     font-size: 18px;
     margin-bottom: 30px;
+    color: #ccc; /* Cambiamos el color del texto */
 }
 
 /* Estilos adicionales para los botones */
@@ -135,11 +144,54 @@ section h2 {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    border: none; /* Quitamos el borde */
+    margin-right: 10px; /* Añadimos espacio entre botones */
 }
 
 /* Estilos de los botones al pasar el ratón */
 .btn:hover {
     background-color: #555;
+}
+
+/* Estilos de los inputs */
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Añadimos espacio desde el contenido anterior */
+}
+
+.search-box input[type="text"],
+.search-box input[type="date"],
+.search-box input[type="number"] {
+    width: 200px; /* Ajustamos el ancho de los inputs */
+    padding: 10px; /* Añadimos espacio interno */
+    margin-right: 10px; /* Añadimos espacio entre inputs */
+    border-radius: 5px; /* Agregamos bordes redondeados */
+    border: 1px solid #ccc; /* Añadimos un borde */
+    font-size: 16px;
+    transition: border-color 0.3s ease; /* Agregamos transición en el cambio de color del borde */
+}
+
+.search-box input[type="text"]:focus,
+.search-box input[type="date"]:focus,
+.search-box input[type="number"]:focus {
+    border-color: #555; /* Cambiamos el color del borde al enfocar */
+    outline: none; /* Quitamos el resplandor al enfocar */
+}
+
+/* Estilos del botón de búsqueda */
+.btn-search {
+    background-color: #007bff; /* Cambiamos el color del botón */
+    color: #fff; /* Cambiamos el color del texto */
+    border: none; /* Quitamos el borde */
+    padding: 10px 20px; /* Ajustamos el padding */
+    border-radius: 5px; /* Agregamos bordes redondeados */
+    cursor: pointer; /* Cambiamos el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Agregamos transición al color de fondo */
+}
+
+.btn-search:hover {
+    background-color: #0056b3; /* Cambiamos el color del botón al pasar el ratón */
 }
 
 /* Estilos del pie de página */
@@ -148,4 +200,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
+    position: relative; /* Agregamos posición relativa para el contenedor */
+    z-index: 2; /* Elevamos el pie de página */
 }
