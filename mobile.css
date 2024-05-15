@@ -1,0 +1,35 @@
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box input[type="text"],
+    .search-box input[type="date"],
+    .search-box input[type="number"] {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .room-card {
+        flex: 0 0 calc(50% - 15px);
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}

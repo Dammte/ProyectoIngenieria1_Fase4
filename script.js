@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -40,13 +40,13 @@ function scrollFunction() {
 }
 
 function topFunction() {
-    let scrollToTop = window.setInterval(function() {
+    let scrollToTop = window.setInterval(function () {
         let pos = window.pageYOffset;
         if (pos > 0) {
             window.scrollTo(0, pos - 20);
         } else {
             clearInterval(scrollToTop);
         }
-    }, 5); 
+    }, 5);
 }
 

@@ -227,7 +227,7 @@ section h2 {
 }
 
 .btn-room:hover {
-    background-color: #0056b3;
+    background-color: #454444;
 }
 
 
@@ -273,7 +273,8 @@ section h2 {
 .contact-section h2 {
     margin-bottom: 30px;
     color: #333;
-    text-align: center; /* Añadido para centrar el título */
+    text-align: center;
+    /* Añadido para centrar el título */
 }
 
 .contact-info {
@@ -304,7 +305,8 @@ section h2 {
 }
 
 .contact-form {
-    margin-top: 30px; /* Ajuste para reducir el espacio superior */
+    margin-top: 30px;
+    /* Ajuste para reducir el espacio superior */
 }
 
 .contact-form .form-group {
@@ -371,7 +373,7 @@ section h2 {
 
 .scrollBtnAppear {
     opacity: 1;
-    transform: translateY(0); 
+    transform: translateY(0);
 }
 
 @keyframes fadeInUp {
@@ -379,13 +381,12 @@ section h2 {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
-
-
 
 footer {
     background-color: #333;
